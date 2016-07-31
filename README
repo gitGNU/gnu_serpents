@@ -34,7 +34,7 @@ someone else wants to do it, they are welcome to contribute :-)
 To install Serpents from a git checkout, you will need
 autotools, SDL2 and SDL_TTF. First clone the repository:
 
-    $ git clone https://github.com/jchmrt/serpents.git
+    $ git clone git://git.savannah.nongnu.org/serpents.git
 
 Then build it:
 
