@@ -1,0 +1,8 @@
+serpents-color.o: color.c \
+ /home/jchmrt/.guix-profile/include/stdc-predef.h color.h ../config.h
+
+/home/jchmrt/.guix-profile/include/stdc-predef.h:
+
+color.h:
+
+../config.h:

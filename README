@@ -1,0 +1,61 @@
+
+                                                  v
+                                                  |           __
+      _________     GROW, BUT DON'T COLLIDE!     / \    _____/ o\
+     / _______/       a multi-snake game:       (o o)  / ____  o |-<
+    / /          _____  _ __  ____   _____ _ ___ | |  / /    \__/
+    \ \______   / ___ \| /  \|  _ \ / ___ \ '   \| |__\ \______
+     \______ \ / /__/ /|  /\_| / \ \ /__/ /  /\  |  ___\______ \
+     __     \ Y  ____/_| |   | \_/ / ____/| |  | | |  _       \ \
+    /o \____/ /\ \___/ o\|   |  __/\ \____| |  | |  \/ )______/ /
+ >-| o  _____/  \____  o |-< | |    \____/|_|  | |\___/________/
+    \__/             \__/    | |              (o o)
+                             |_|               \_/
+                                                |
+                                                ^
+
+======================================================================
+
+                               GENERAL
+
+Serpents is a snake-like game, in which you control 3 serpents of
+different colors. You start as the red one and can switch to others by
+picking up food of a different color. Try to eat as much as possible
+without colliding!
+
+Serpents is not yet finished, there are still some things I'd like to
+add. Among those are a proper game-over screen and better graphics.
+Unfortunately I don't have a lot of time/motivation for it, so if
+someone else wants to do it, they are welcome to contribute :-)
+
+
+                             INSTALLATION
+
+To install Serpents from a git checkout, you will need
+autotools, SDL2 and SDL_TTF. First clone the repository:
+
+    $ git clone https://github.com/jchmrt/serpents.git
+
+Then build it:
+
+    $ cd serpents
+    $ autoreconf -vif
+    $ ./configure
+    $ make
+
+And install it:
+
+    $ sudo make install
+
+
+                                USAGE
+
+Once you've installed Serpents, you can run it in a terminal with
+`serpents'. To see help or version information use `-h' and `-v'
+respectively.
+
+
+                               LICENSE
+
+Serpents is licensed under the GPLv3+, see `COPYING' for the full
+license text.

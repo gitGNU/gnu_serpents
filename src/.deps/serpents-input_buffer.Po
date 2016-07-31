@@ -1,0 +1,86 @@
+serpents-input_buffer.o: input_buffer.c \
+ /home/jchmrt/.guix-profile/include/stdc-predef.h input_buffer.h board.h \
+ /home/jchmrt/.guix-profile/include/stdlib.h \
+ /home/jchmrt/.guix-profile/include/features.h \
+ /home/jchmrt/.guix-profile/include/sys/cdefs.h \
+ /home/jchmrt/.guix-profile/include/bits/wordsize.h \
+ /home/jchmrt/.guix-profile/include/gnu/stubs.h \
+ /home/jchmrt/.guix-profile/include/gnu/stubs-64.h \
+ /gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/stddef.h \
+ /home/jchmrt/.guix-profile/include/bits/waitflags.h \
+ /home/jchmrt/.guix-profile/include/bits/waitstatus.h \
+ /home/jchmrt/.guix-profile/include/endian.h \
+ /home/jchmrt/.guix-profile/include/bits/endian.h \
+ /home/jchmrt/.guix-profile/include/bits/byteswap.h \
+ /home/jchmrt/.guix-profile/include/bits/types.h \
+ /home/jchmrt/.guix-profile/include/bits/typesizes.h \
+ /home/jchmrt/.guix-profile/include/bits/byteswap-16.h \
+ /home/jchmrt/.guix-profile/include/sys/types.h \
+ /home/jchmrt/.guix-profile/include/time.h \
+ /home/jchmrt/.guix-profile/include/sys/select.h \
+ /home/jchmrt/.guix-profile/include/bits/select.h \
+ /home/jchmrt/.guix-profile/include/bits/sigset.h \
+ /home/jchmrt/.guix-profile/include/bits/time.h \
+ /home/jchmrt/.guix-profile/include/sys/sysmacros.h \
+ /home/jchmrt/.guix-profile/include/bits/pthreadtypes.h \
+ /home/jchmrt/.guix-profile/include/alloca.h \
+ /home/jchmrt/.guix-profile/include/bits/stdlib-bsearch.h \
+ /home/jchmrt/.guix-profile/include/bits/stdlib-float.h
+
+/home/jchmrt/.guix-profile/include/stdc-predef.h:
+
+input_buffer.h:
+
+board.h:
+
+/home/jchmrt/.guix-profile/include/stdlib.h:
+
+/home/jchmrt/.guix-profile/include/features.h:
+
+/home/jchmrt/.guix-profile/include/sys/cdefs.h:
+
+/home/jchmrt/.guix-profile/include/bits/wordsize.h:
+
+/home/jchmrt/.guix-profile/include/gnu/stubs.h:
+
+/home/jchmrt/.guix-profile/include/gnu/stubs-64.h:
+
+/gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/stddef.h:
+
+/home/jchmrt/.guix-profile/include/bits/waitflags.h:
+
+/home/jchmrt/.guix-profile/include/bits/waitstatus.h:
+
+/home/jchmrt/.guix-profile/include/endian.h:
+
+/home/jchmrt/.guix-profile/include/bits/endian.h:
+
+/home/jchmrt/.guix-profile/include/bits/byteswap.h:
+
+/home/jchmrt/.guix-profile/include/bits/types.h:
+
+/home/jchmrt/.guix-profile/include/bits/typesizes.h:
+
+/home/jchmrt/.guix-profile/include/bits/byteswap-16.h:
+
+/home/jchmrt/.guix-profile/include/sys/types.h:
+
+/home/jchmrt/.guix-profile/include/time.h:
+
+/home/jchmrt/.guix-profile/include/sys/select.h:
+
+/home/jchmrt/.guix-profile/include/bits/select.h:
+
+/home/jchmrt/.guix-profile/include/bits/sigset.h:
+
+/home/jchmrt/.guix-profile/include/bits/time.h:
+
+/home/jchmrt/.guix-profile/include/sys/sysmacros.h:
+
+/home/jchmrt/.guix-profile/include/bits/pthreadtypes.h:
+
+/home/jchmrt/.guix-profile/include/alloca.h:
+
+/home/jchmrt/.guix-profile/include/bits/stdlib-bsearch.h:
+
+/home/jchmrt/.guix-profile/include/bits/stdlib-float.h:

@@ -1,0 +1,322 @@
+serpents-main.o: main.c /home/jchmrt/.guix-profile/include/stdc-predef.h \
+ /home/jchmrt/.guix-profile/include/getopt.h \
+ /home/jchmrt/.guix-profile/include/ctype.h \
+ /home/jchmrt/.guix-profile/include/features.h \
+ /home/jchmrt/.guix-profile/include/sys/cdefs.h \
+ /home/jchmrt/.guix-profile/include/bits/wordsize.h \
+ /home/jchmrt/.guix-profile/include/gnu/stubs.h \
+ /home/jchmrt/.guix-profile/include/gnu/stubs-64.h \
+ /home/jchmrt/.guix-profile/include/bits/types.h \
+ /home/jchmrt/.guix-profile/include/bits/typesizes.h \
+ /home/jchmrt/.guix-profile/include/endian.h \
+ /home/jchmrt/.guix-profile/include/bits/endian.h \
+ /home/jchmrt/.guix-profile/include/bits/byteswap.h \
+ /home/jchmrt/.guix-profile/include/bits/byteswap-16.h \
+ /home/jchmrt/.guix-profile/include/xlocale.h ../config.h game.h state.h \
+ board.h color.h input_buffer.h \
+ /home/jchmrt/.guix-profile/include/stdlib.h \
+ /gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/stddef.h \
+ /home/jchmrt/.guix-profile/include/bits/waitflags.h \
+ /home/jchmrt/.guix-profile/include/bits/waitstatus.h \
+ /home/jchmrt/.guix-profile/include/sys/types.h \
+ /home/jchmrt/.guix-profile/include/time.h \
+ /home/jchmrt/.guix-profile/include/sys/select.h \
+ /home/jchmrt/.guix-profile/include/bits/select.h \
+ /home/jchmrt/.guix-profile/include/bits/sigset.h \
+ /home/jchmrt/.guix-profile/include/bits/time.h \
+ /home/jchmrt/.guix-profile/include/sys/sysmacros.h \
+ /home/jchmrt/.guix-profile/include/bits/pthreadtypes.h \
+ /home/jchmrt/.guix-profile/include/alloca.h \
+ /home/jchmrt/.guix-profile/include/bits/stdlib-float.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_main.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_stdinc.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_config.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_platform.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/begin_code.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/close_code.h \
+ /home/jchmrt/.guix-profile/include/stdio.h \
+ /home/jchmrt/.guix-profile/include/libio.h \
+ /home/jchmrt/.guix-profile/include/_G_config.h \
+ /home/jchmrt/.guix-profile/include/wchar.h \
+ /gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/stdarg.h \
+ /home/jchmrt/.guix-profile/include/bits/stdio_lim.h \
+ /home/jchmrt/.guix-profile/include/bits/sys_errlist.h \
+ /home/jchmrt/.guix-profile/include/string.h \
+ /home/jchmrt/.guix-profile/include/strings.h \
+ /home/jchmrt/.guix-profile/include/inttypes.h \
+ /home/jchmrt/.guix-profile/include/stdint.h \
+ /home/jchmrt/.guix-profile/include/bits/wchar.h \
+ /home/jchmrt/.guix-profile/include/math.h \
+ /home/jchmrt/.guix-profile/include/bits/math-vector.h \
+ /home/jchmrt/.guix-profile/include/bits/libm-simd-decl-stubs.h \
+ /home/jchmrt/.guix-profile/include/bits/huge_val.h \
+ /home/jchmrt/.guix-profile/include/bits/huge_valf.h \
+ /home/jchmrt/.guix-profile/include/bits/huge_vall.h \
+ /home/jchmrt/.guix-profile/include/bits/inf.h \
+ /home/jchmrt/.guix-profile/include/bits/nan.h \
+ /home/jchmrt/.guix-profile/include/bits/mathdef.h \
+ /home/jchmrt/.guix-profile/include/bits/mathcalls.h \
+ /home/jchmrt/.guix-profile/include/iconv.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_assert.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_atomic.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_audio.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_error.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_endian.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_mutex.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_thread.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_rwops.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_clipboard.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_cpuinfo.h \
+ /gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/mmintrin.h \
+ /gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/xmmintrin.h \
+ /gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/mm_malloc.h \
+ /gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/emmintrin.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_events.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_video.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_pixels.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_rect.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_surface.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_blendmode.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_keyboard.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_keycode.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_scancode.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_mouse.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_joystick.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_gamecontroller.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_quit.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_gesture.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_touch.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_filesystem.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_haptic.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_hints.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_loadso.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_log.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_messagebox.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_power.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_render.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_system.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_timer.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_version.h \
+ /gnu/store/r8z2047iwh9m97rvw7hkb3yjp3qss7zk-sdl2-ttf-2.0.14/include/SDL2/SDL_ttf.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/begin_code.h \
+ /gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/close_code.h \
+ interface.h
+
+/home/jchmrt/.guix-profile/include/stdc-predef.h:
+
+/home/jchmrt/.guix-profile/include/getopt.h:
+
+/home/jchmrt/.guix-profile/include/ctype.h:
+
+/home/jchmrt/.guix-profile/include/features.h:
+
+/home/jchmrt/.guix-profile/include/sys/cdefs.h:
+
+/home/jchmrt/.guix-profile/include/bits/wordsize.h:
+
+/home/jchmrt/.guix-profile/include/gnu/stubs.h:
+
+/home/jchmrt/.guix-profile/include/gnu/stubs-64.h:
+
+/home/jchmrt/.guix-profile/include/bits/types.h:
+
+/home/jchmrt/.guix-profile/include/bits/typesizes.h:
+
+/home/jchmrt/.guix-profile/include/endian.h:
+
+/home/jchmrt/.guix-profile/include/bits/endian.h:
+
+/home/jchmrt/.guix-profile/include/bits/byteswap.h:
+
+/home/jchmrt/.guix-profile/include/bits/byteswap-16.h:
+
+/home/jchmrt/.guix-profile/include/xlocale.h:
+
+../config.h:
+
+game.h:
+
+state.h:
+
+board.h:
+
+color.h:
+
+input_buffer.h:
+
+/home/jchmrt/.guix-profile/include/stdlib.h:
+
+/gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/stddef.h:
+
+/home/jchmrt/.guix-profile/include/bits/waitflags.h:
+
+/home/jchmrt/.guix-profile/include/bits/waitstatus.h:
+
+/home/jchmrt/.guix-profile/include/sys/types.h:
+
+/home/jchmrt/.guix-profile/include/time.h:
+
+/home/jchmrt/.guix-profile/include/sys/select.h:
+
+/home/jchmrt/.guix-profile/include/bits/select.h:
+
+/home/jchmrt/.guix-profile/include/bits/sigset.h:
+
+/home/jchmrt/.guix-profile/include/bits/time.h:
+
+/home/jchmrt/.guix-profile/include/sys/sysmacros.h:
+
+/home/jchmrt/.guix-profile/include/bits/pthreadtypes.h:
+
+/home/jchmrt/.guix-profile/include/alloca.h:
+
+/home/jchmrt/.guix-profile/include/bits/stdlib-float.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_main.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_stdinc.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_config.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_platform.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/begin_code.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/close_code.h:
+
+/home/jchmrt/.guix-profile/include/stdio.h:
+
+/home/jchmrt/.guix-profile/include/libio.h:
+
+/home/jchmrt/.guix-profile/include/_G_config.h:
+
+/home/jchmrt/.guix-profile/include/wchar.h:
+
+/gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/stdarg.h:
+
+/home/jchmrt/.guix-profile/include/bits/stdio_lim.h:
+
+/home/jchmrt/.guix-profile/include/bits/sys_errlist.h:
+
+/home/jchmrt/.guix-profile/include/string.h:
+
+/home/jchmrt/.guix-profile/include/strings.h:
+
+/home/jchmrt/.guix-profile/include/inttypes.h:
+
+/home/jchmrt/.guix-profile/include/stdint.h:
+
+/home/jchmrt/.guix-profile/include/bits/wchar.h:
+
+/home/jchmrt/.guix-profile/include/math.h:
+
+/home/jchmrt/.guix-profile/include/bits/math-vector.h:
+
+/home/jchmrt/.guix-profile/include/bits/libm-simd-decl-stubs.h:
+
+/home/jchmrt/.guix-profile/include/bits/huge_val.h:
+
+/home/jchmrt/.guix-profile/include/bits/huge_valf.h:
+
+/home/jchmrt/.guix-profile/include/bits/huge_vall.h:
+
+/home/jchmrt/.guix-profile/include/bits/inf.h:
+
+/home/jchmrt/.guix-profile/include/bits/nan.h:
+
+/home/jchmrt/.guix-profile/include/bits/mathdef.h:
+
+/home/jchmrt/.guix-profile/include/bits/mathcalls.h:
+
+/home/jchmrt/.guix-profile/include/iconv.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_assert.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_atomic.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_audio.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_error.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_endian.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_mutex.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_thread.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_rwops.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_clipboard.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_cpuinfo.h:
+
+/gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/mmintrin.h:
+
+/gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/xmmintrin.h:
+
+/gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/mm_malloc.h:
+
+/gnu/store/px9q3qagradazscm0high02jcn7cni8x-gcc-6.1.0-lib/lib/gcc/x86_64-unknown-linux-gnu/6.1.0/include/emmintrin.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_events.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_video.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_pixels.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_rect.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_surface.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_blendmode.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_keyboard.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_keycode.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_scancode.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_mouse.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_joystick.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_gamecontroller.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_quit.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_gesture.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_touch.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_filesystem.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_haptic.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_hints.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_loadso.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_log.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_messagebox.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_power.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_render.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_system.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_timer.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/SDL_version.h:
+
+/gnu/store/r8z2047iwh9m97rvw7hkb3yjp3qss7zk-sdl2-ttf-2.0.14/include/SDL2/SDL_ttf.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/begin_code.h:
+
+/gnu/store/7fn2mb8ybsd7hpqg3hzbfdnjdnxd96zw-sdl2-2.0.4/include/SDL2/close_code.h:
+
+interface.h:
