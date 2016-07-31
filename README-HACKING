@@ -1,0 +1,32 @@
+
+                                                  v
+                                                  |           __
+      _________     GROW, BUT DON'T COLLIDE!     / \    _____/ o\
+     / _______/       a multi-snake game:       (o o)  / ____  o |-<
+    / /          _____  _ __  ____   _____ _ ___ | |  / /    \__/
+    \ \______   / ___ \| /  \|  _ \ / ___ \ '   \| |__\ \______
+     \______ \ / /__/ /|  /\_| / \ \ /__/ /  /\  |  ___\______ \
+     __     \ Y  ____/_| |   | \_/ / ____/| |  | | |  _       \ \
+    /o \____/ /\ \___/ o\|   |  __/\ \____| |  | |  \/ )______/ /
+ >-| o  _____/  \____  o |-< | |    \____/|_|  | |\___/________/
+    \__/             \__/    | |              (o o)
+                             |_|               \_/
+                                                |
+                                                ^
+
+======================================================================
+
+To build Serpents from a git checkout, you will need autotools in
+addition to SDL2 and SDL_ttf. First run:
+
+    $ autoreconf -vif
+
+Then:
+
+    $ ./configure
+    $ make
+
+For serpents to be able to find the required data files, you should
+also install it using `make install' once. After doing that you can
+run the executable generated with `make' on its own,
+e.g. `./src/serpents'.

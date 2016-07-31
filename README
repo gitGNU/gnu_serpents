@@ -31,15 +31,14 @@ someone else wants to do it, they are welcome to contribute :-)
 
                              INSTALLATION
 
-To install Serpents from a git checkout, you will need
-autotools, SDL2 and SDL_TTF. First clone the repository:
+To install Serpents from a distribution tarball, you will need SDL2
+and SDL_TTF. First unpack the archive
 
-    $ git clone git://git.savannah.nongnu.org/serpents.git
+    $ tar xvf serpents-[version].tar.gz
+    $ cd serpents-[version]
 
 Then build it:
 
-    $ cd serpents
-    $ autoreconf -vif
     $ ./configure
     $ make
 
