@@ -45,8 +45,9 @@ help ()
      "Usage: serpents\n"
      "\n");
   printf
-    ("  -v, --version         Output version information and exit\n"
-     "  -h, --help            Display this help and exit\n"
+    ("  -v, --version           Output version information and exit\n"
+     "  -h, --help              Display this help and exit\n"
+     "  -s, --tile-size=SIZE    Set the tile size to SIZE\n"
      "\n");
 }
 
@@ -57,12 +58,13 @@ main (int argc, char **argv)
     {
       {"version", no_argument, NULL, 'v'},
       {"help", no_argument, NULL, 'h'},
+      {"tile-size", required_argument, NULL, 's'},
       {0, 0, 0, 0}
     };
   int c, option_index = 0;
   Game_Settings settings = default_game_settings;
 
-  while ((c = getopt_long (argc, argv, "hv",
+  while ((c = getopt_long (argc, argv, "hvs:",
                            long_options, &option_index))
          != -1)
     {
@@ -76,6 +78,18 @@ main (int argc, char **argv)
         case 'h':
           help ();
           return 0;
+        case 's':
+          settings.tile_size = atoi (optarg);
+          if (settings.tile_size < 7)
+            {
+              printf ("Tile size should be greater than 7.\n");
+              return 1;
+            }
+          settings.snake_padding = settings.tile_size < 32
+            ? 1 : settings.tile_size / 32;
+          settings.food_padding = settings.tile_size < 10
+            ? 2 : settings.tile_size / 5;
+          break;
         }
     }
 
