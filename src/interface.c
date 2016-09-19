@@ -116,6 +116,7 @@ draw_game_over (Game_State *state)
   strcpy (full_text, game_over_text);
   strcat (full_text, score_text);
 
+  draw (state);
   draw_overlay (state, black, 150);
   
   draw_text (state, state->score_font, full_text, white,
