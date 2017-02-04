@@ -110,6 +110,9 @@ add_food (Board *board, char id)
     if (board_data[i].type == TILE_EMPTY)
       n_empty++;
 
+  if (n_empty == 0)
+    return;
+
   random_number = rand () % n_empty;
 
   for (i = 0; i < length; i++)
