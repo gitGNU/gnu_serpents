@@ -43,17 +43,4 @@ Game_Settings default_game_settings;
 
 void run_game (Game_Settings);
 
-static Game_State *initialize_game (Game_Settings);
-static void initialize_SDL (Game_State *, int, int);
-static void game_loop (Game_State *);
-static int step_game (Game_State *);
-static int move (Game_State *);
-
-static void get_all_input (Game_State *);
-static Snake *current_snake (Game_State *);
-static Direction pop_next_direction (Game_State *);
-static Direction current_direction (Game_State *);
-static int is_valid_direction_change (Direction, Direction);
-static void delay (Game_State *);
-
 #endif

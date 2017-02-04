@@ -71,10 +71,4 @@ Tile *get_tile (Board *, int, int);
 Vector dir_to_vector (Direction);
 Vector add_vectors_on_board (Board, Vector, Vector);
 
-static void set_tile (Board *, int, int, char, Tile_Type, Direction);
-static int dir_x (Direction);
-static int dir_y (Direction);
-static Vector add_vectors (Vector, Vector);
-static Vector on_board (Board, Vector);
-
 #endif

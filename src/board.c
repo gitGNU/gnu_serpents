@@ -19,6 +19,12 @@ along with serpents.  If not, see <http://www.gnu.org/licenses/>.
 #include <stdlib.h>
 #include "board.h"
 
+static void set_tile (Board *, int, int, char, Tile_Type, Direction);
+static int dir_x (Direction);
+static int dir_y (Direction);
+static Vector add_vectors (Vector, Vector);
+static Vector on_board (Board, Vector);
+
 Board *
 initialize_board (int width, int height)
 {

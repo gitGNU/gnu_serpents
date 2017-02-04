@@ -20,6 +20,18 @@ along with serpents.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "interface.h"
 
+
+static char *itoa (int);
+static void draw_text (Game_State *, TTF_Font *, char *,
+                       SDL_Color, int, int, int, int);
+static void draw_overlay (Game_State *, SDL_Color, int);
+static void draw_snake (Game_State *, char);
+static void draw_tail (Game_State *, Vector, Direction);
+static void draw_snake_tile (Game_State *, Vector, Direction, Direction);
+static void draw_food (Game_State *, char, int, int);
+static void set_color (Game_State *, RGBA_Color col);
+static Direction reverse_dir (Direction);
+
 void
 draw (Game_State *state)
 {
@@ -152,13 +164,13 @@ draw_game_over (Game_State *state)
 static void
 draw_snake (Game_State *state, char id)
 {
-  Vector pos = state->snakes[id].tail,
-    head_pos = state->snakes[id].head;
+  Vector pos = state->snakes[(int) id].tail,
+    head_pos = state->snakes[(int) id].head;
   Direction prev_dir = get_tile (state->board,
                                  pos.x, pos.y)->dir;
   RGBA_Color col = state->current_snake == id
-    ? state->snake_colors[id]
-    : scale_color (state->snake_colors[id], 0.6);
+    ? state->snake_colors[(int) id]
+    : scale_color (state->snake_colors[(int) id], 0.6);
 
   set_color (state, col);
 
@@ -278,7 +290,7 @@ draw_food (Game_State *state, char id, int x, int y)
                     y * tile_size + food_padding,
                     tile_size - food_padding * 2,
                     tile_size - food_padding * 2 };
-  set_color (state, scale_color(state->snake_colors[id], 1.5));
+  set_color (state, scale_color(state->snake_colors[(int) id], 1.5));
   SDL_RenderFillRect (state->renderer, &food);
 }
 
@@ -302,5 +314,8 @@ reverse_dir (Direction dir)
       return DIR_RIGHT;
     case DIR_RIGHT:
       return DIR_LEFT;
+    default:
+      printf(PACKAGE_NAME ": unknown direction: %d\n", dir);
+      return -1;
     }
 }

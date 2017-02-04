@@ -22,7 +22,7 @@ serpents_SOURCES = main.c
 
 
 serpents_CFLAGS = $(SDL_CFLAGS) $(TTF_CFLAGS) \
-                  -DFONTS_PATH=\"$(fontsdir)\"
+                  -DFONTS_PATH=\"$(fontsdir)\" -Wall
 
 serpents_LDADD = $(top_builddir)/src/libserpents.a \
 	$(SDL_LIBS) $(TTF_LIBS) -lm
@@ -37,4 +37,4 @@ libserpents_a_SOURCES = board.h board.c \
 	interface.h interface.c \
 	state.h
 libserpents_a_CFLAGS = $(SDL_CFLAGS) $(TTF_CFLAGS) \
-                  -DFONTS_PATH=\"$(fontsdir)\"
+                  -DFONTS_PATH=\"$(fontsdir)\" -Wall

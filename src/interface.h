@@ -27,15 +27,4 @@ along with serpents.  If not, see <http://www.gnu.org/licenses/>.
 void draw (Game_State *);
 int draw_game_over (Game_State *);
 
-static char *itoa (int);
-static void draw_text (Game_State *, TTF_Font *, char *,
-                       SDL_Color, int, int, int, int);
-static void draw_overlay (Game_State *, SDL_Color, int);
-static void draw_snake (Game_State *, char);
-static void draw_tail (Game_State *, Vector, Direction);
-static void draw_snake_tile (Game_State *, Vector, Direction, Direction);
-static void draw_food (Game_State *, char, int, int);
-static void set_color (Game_State *, RGBA_Color col);
-static Direction reverse_dir (Direction);
-
 #endif
