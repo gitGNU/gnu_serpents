@@ -28,7 +28,6 @@ Input_Buffer *
 create_input_buffer ()
 {
   Input_Buffer *buf = malloc (sizeof (Input_Buffer));
-  int i;
 
   if (!buf)
     return NULL;
