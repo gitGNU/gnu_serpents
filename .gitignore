@@ -1,0 +1,15 @@
+Makefile
+Makefile.in
+TAGS
+*.gcov
+*.gcno
+*.gcda
+/config.h
+/config.h.in
+*\~
+*.a
+*.o
+/configure
+/config.status
+/config.log
+/src/serpents
