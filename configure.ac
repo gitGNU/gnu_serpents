@@ -24,10 +24,16 @@ AC_CONFIG_SRCDIR([src/main.c])
 
 AC_PROG_CC
 
+# Programs needed for building the static library
+AC_PROG_RANLIB
+AM_PROG_AR
+
+
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([Makefile
                 src/Makefile
-                data/Makefile])
+                data/Makefile
+                tests/Makefile])
 
 # Check for SDL2
 SDL_VERSION=2.0.0
@@ -46,12 +52,16 @@ AC_SUBST(SDL_CFLAGS)
 AC_SUBST(SDL_LIBS)
 
 # Check for SDL_ttf
-
 PKG_CHECK_MODULES([TTF], [SDL2_ttf], :,
                          AC_MSG_ERROR([*** SDL_ttf not found!]))
 
 AC_SUBST([TTF_CFLAGS])
 AC_SUBST([TTF_LIBS])
+
+# Check for Check, used for testing
+PKG_CHECK_MODULES([CHECK], [check], :,
+  [AC_MSG_WARN([Check was not found, this means you will not be able \
+to run the unit tests (using `make check').])])
 
 AC_CHECK_HEADERS([stdlib.h])
 

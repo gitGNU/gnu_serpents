@@ -17,6 +17,6 @@
 
 ## Process this file with automake to produce Makefile.in
 
-SUBDIRS = src data
+SUBDIRS = src data tests
 
 dist_doc_DATA = README

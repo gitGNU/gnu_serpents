@@ -18,14 +18,23 @@
 ## Process this file with automake to produce Makefile.in
 
 bin_PROGRAMS = serpents
-serpents_SOURCES = main.c \
-	board.h board.c \
+serpents_SOURCES = main.c
+
+
+serpents_CFLAGS = $(SDL_CFLAGS) $(TTF_CFLAGS) \
+                  -DFONTS_PATH=\"$(fontsdir)\"
+
+serpents_LDADD = $(top_builddir)/src/libserpents.a \
+	$(SDL_LIBS) $(TTF_LIBS) -lm
+
+# We create a static library, so that we can unit test the functions
+# with check.
+noinst_LIBRARIES = libserpents.a
+libserpents_a_SOURCES = board.h board.c \
 	game.h game.c \
 	color.h color.c \
 	input_buffer.h input_buffer.c \
 	interface.h interface.c \
 	state.h
-
-serpents_CFLAGS = $(SDL_CFLAGS) $(TTF_CFLAGS) \
+libserpents_a_CFLAGS = $(SDL_CFLAGS) $(TTF_CFLAGS) \
                   -DFONTS_PATH=\"$(fontsdir)\"
-serpents_LDADD = $(SDL_LIBS) $(TTF_LIBS) -lm
