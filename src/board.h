@@ -70,5 +70,6 @@ void add_food (Board *, char);
 Tile *get_tile (Board *, int, int);
 Vector dir_to_vector (Direction);
 Vector add_vectors_on_board (Board, Vector, Vector);
+int is_valid_direction_change (Direction, Direction);
 
 #endif

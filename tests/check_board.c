@@ -190,6 +190,43 @@ START_TEST (move_snake_test)
 }
 END_TEST
 
+START_TEST (change_from_up_test)
+{
+  ck_assert (!is_valid_direction_change (DIR_UP, DIR_UP));
+  ck_assert (is_valid_direction_change (DIR_UP, DIR_RIGHT));
+  ck_assert (is_valid_direction_change (DIR_UP, DIR_LEFT));
+  ck_assert (!is_valid_direction_change (DIR_UP, DIR_DOWN));
+}
+END_TEST
+
+START_TEST (change_from_right_test)
+{
+  ck_assert (is_valid_direction_change (DIR_RIGHT, DIR_UP));
+  ck_assert (!is_valid_direction_change (DIR_RIGHT, DIR_RIGHT));
+  ck_assert (!is_valid_direction_change (DIR_RIGHT, DIR_LEFT));
+  ck_assert (is_valid_direction_change (DIR_RIGHT, DIR_DOWN));
+}
+END_TEST
+
+START_TEST (change_from_left_test)
+{
+  ck_assert (is_valid_direction_change (DIR_LEFT, DIR_UP));
+  ck_assert (!is_valid_direction_change (DIR_LEFT, DIR_RIGHT));
+  ck_assert (!is_valid_direction_change (DIR_LEFT, DIR_LEFT));
+  ck_assert (is_valid_direction_change (DIR_LEFT, DIR_DOWN));
+}
+END_TEST
+
+START_TEST (change_from_down_test)
+{
+  ck_assert (!is_valid_direction_change (DIR_DOWN, DIR_UP));
+  ck_assert (is_valid_direction_change (DIR_DOWN, DIR_RIGHT));
+  ck_assert (is_valid_direction_change (DIR_DOWN, DIR_LEFT));
+  ck_assert (!is_valid_direction_change (DIR_DOWN, DIR_DOWN));
+}
+END_TEST
+
+
 
 Suite *
 board_suite (void)
@@ -216,6 +253,10 @@ board_suite (void)
   tcase_add_test (tc_core, initial_snake_test);
   tcase_add_test (tc_core, tile_from_head_test);
   tcase_add_test (tc_core, move_snake_test);
+  tcase_add_test (tc_core, change_from_up_test);
+  tcase_add_test (tc_core, change_from_right_test);
+  tcase_add_test (tc_core, change_from_left_test);
+  tcase_add_test (tc_core, change_from_down_test);
 
   suite_add_tcase(s, tc_core);
 

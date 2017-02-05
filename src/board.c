@@ -149,6 +149,16 @@ add_vectors_on_board (Board board, Vector v1, Vector v2)
   return on_board (board, add_vectors (v1, v2));
 }
 
+int
+is_valid_direction_change (Direction old, Direction new)
+{
+  return ((old == DIR_UP || old == DIR_DOWN)
+          && (new == DIR_LEFT || new == DIR_RIGHT))
+    || ((old == DIR_LEFT || old == DIR_RIGHT)
+        && (new == DIR_UP || new == DIR_DOWN));
+}
+
+
 
 
 static void

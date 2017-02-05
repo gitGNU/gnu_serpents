@@ -31,7 +31,6 @@ static void get_all_input (Game_State *);
 static Snake *current_snake (Game_State *);
 static Direction pop_next_direction (Game_State *);
 static Direction current_direction (Game_State *);
-static int is_valid_direction_change (Direction, Direction);
 static void delay (Game_State *);
 
 RGBA_Color default_snake_colors[3] =
@@ -298,15 +297,6 @@ current_direction (Game_State *state)
 {
   return get_tile (state->board, current_snake (state)->head.x,
                    current_snake (state)->head.y)->dir;
-}
-
-static int
-is_valid_direction_change (Direction old, Direction new)
-{
-  return ((old == DIR_UP || old == DIR_DOWN)
-          && (new == DIR_LEFT || new == DIR_RIGHT))
-    || ((old == DIR_LEFT || old == DIR_RIGHT)
-        && (new == DIR_UP || new == DIR_DOWN));
 }
 
 static void
