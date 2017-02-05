@@ -18,7 +18,7 @@ along with serpents.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include "../src/board.h"
 
-#include "check_input_buffer.h"
+#include "check_board.h"
 
 START_TEST (dir_to_vector_left_test)
 {
