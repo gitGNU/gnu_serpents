@@ -22,6 +22,7 @@ check_PROGRAMS = check_serpents
 check_serpents_SOURCES = check_serpents.c \
 	check_input_buffer.c check_input_buffer.h \
 	check_board.c check_board.h \
+	check_color.c check_color.h \
 	$(top_builddir)/src/input_buffer.h
 
 check_serpents_CFLAGS = @CHECK_CFLAGS@

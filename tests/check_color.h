@@ -16,26 +16,11 @@ for more details.
 You should have received a copy of the GNU General Public License
 along with serpents.  If not, see <http://www.gnu.org/licenses/>.
 */
-#include <stdlib.h>
+#ifndef CHECK_COLOR_H_
+#define CHECK_COLOR_H_
+
 #include <check.h>
 
-#include "check_input_buffer.h"
-#include "check_board.h"
-#include "check_color.h"
+Suite *color_suite (void);
 
-int
-main (void)
-{
-  int number_failed;
-  SRunner *sr;
-
-  sr = srunner_create (input_buffer_suite ());
-  srunner_add_suite (sr, board_suite ());
-  srunner_add_suite (sr, color_suite ());
-
-  srunner_set_log (sr, "test.log");
-  srunner_run_all (sr, CK_NORMAL);
-  number_failed = srunner_ntests_failed (sr);
-  srunner_free (sr);
-  return number_failed ? EXIT_FAILURE : EXIT_SUCCESS;
-}
+#endif
