@@ -35,6 +35,7 @@ libserpents_a_SOURCES = board.h board.c \
 	color.h color.c \
 	input_buffer.h input_buffer.c \
 	interface.h interface.c \
+	high_score.h high_score.c \
 	state.h
 libserpents_a_CFLAGS = $(SDL_CFLAGS) $(TTF_CFLAGS) \
                   -DFONTS_PATH=\"$(fontsdir)\" -Wall

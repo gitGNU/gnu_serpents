@@ -23,7 +23,7 @@ check_serpents_SOURCES = check_serpents.c \
 	check_input_buffer.c check_input_buffer.h \
 	check_board.c check_board.h \
 	check_color.c check_color.h \
-	$(top_builddir)/src/input_buffer.h
+	check_high_score.c check_high_score.h
 
 check_serpents_CFLAGS = @CHECK_CFLAGS@
 check_serpents_LDADD = $(top_builddir)/src/libserpents.a @CHECK_LIBS@

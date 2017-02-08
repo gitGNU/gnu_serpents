@@ -46,6 +46,10 @@ AC_DEFINE(COPYRIGHT_STRING,
 AH_TEMPLATE([COPYRIGHT_STRING],
             [Define to the copyright notice for this package])
 
+AC_DEFINE(NUMBER_OF_HIGH_SCORES, [10])
+AH_TEMPLATE([NUMBER_OF_HIGH_SCORES],
+            [Define to the number of high scores that will be stored.])
+
 AC_SUBST(fontsdir, "\$(datadir)/fonts")
 
 AC_SUBST(SDL_CFLAGS)

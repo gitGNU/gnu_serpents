@@ -16,28 +16,22 @@ for more details.
 You should have received a copy of the GNU General Public License
 along with serpents.  If not, see <http://www.gnu.org/licenses/>.
 */
-#include <stdlib.h>
-#include <check.h>
+#ifndef HIGH_SCORE_H_
+#define HIGH_SCORE_H_
 
-#include "check_input_buffer.h"
-#include "check_board.h"
-#include "check_color.h"
-#include "check_high_score.h"
+#include <stdio.h>
+#include "config.h"
 
-int
-main (void)
+typedef struct
 {
-  int number_failed;
-  SRunner *sr;
+  int score;
+  char *date;
+} High_Score;
 
-  sr = srunner_create (input_buffer_suite ());
-  srunner_add_suite (sr, board_suite ());
-  srunner_add_suite (sr, color_suite ());
-  srunner_add_suite (sr, high_score_suite ());
+High_Score *initial_high_scores (void);
+High_Score *read_high_scores (FILE *);
+void write_high_scores (FILE *, High_Score *);
+void free_high_scores (High_Score *);
+void add_score (High_Score *, int);
 
-  srunner_set_log (sr, "test.log");
-  srunner_run_all (sr, CK_NORMAL);
-  number_failed = srunner_ntests_failed (sr);
-  srunner_free (sr);
-  return number_failed ? EXIT_FAILURE : EXIT_SUCCESS;
-}
+#endif
